@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List with Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>📅 To Do List with Calendar</h1>
+    <p>Name: <b>Yoon Ei Phyu</b> | ID: <b>240702402412</b></p>
+  </div>
+
+  <!-- Calendar -->
+  <div class="calendar-container">
+    <h2>Calendar (2025 - 2026)</h2>
+    <input type="date" id="datePicker">
+  </div>
+
+  <!-- Default Daily Tasks -->
+  <div class="task-section">
+    <h2>Daily Tasks</h2>
+    <ul id="defaultTasks"></ul>
+  </div>
+
+  <!-- Custom To Do -->
+  <div class="task-section">
+    <h2>My To Do List</h2>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Add custom task">
+      <button onclick="addTask()">➕ Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
